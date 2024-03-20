@@ -1,0 +1,325 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: black;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    background-color: white;
+    color: black;
+    line-height: 70px;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+}
+
+.circle{
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(171, 34, 34);
+    border-radius: 50%;
+    margin: 1rem 0 0 2rem;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.circle h5 {
+    margin: 0; 
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    white-space: nowrap; 
+}
+.nav-options{
+    display: flex;
+}
+.options{
+    padding: 0 2rem 0 2rem;
+}
+.options a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    opacity: 0.7;
+}
+.options a:hover{
+    opacity: 1;
+}
+.icons{
+    display: flex;
+}
+.icon-option{
+    padding: 0 0.75rem 0 0.75rem;
+}
+.icon-option a{
+    color: inherit;
+    text-decoration: none;
+}
+.icon-option i{
+    font-size: 1.25rem;
+}
+.icon-option i:hover{
+    transform: scale(1.5);
+}
+.main-content{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    color: black;
+    overflow: auto;
+}
+.left-part{
+    width: 50%;
+}
+.left-part h2{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.left-part p{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 3;
+}
+.clg-name{
+    color: brown;
+    text-decoration: underline;
+}
+.clg-deg{
+    color: brown;
+}
+.badge{
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    /* width: fit-content; */
+}
+.badge button {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    height: 3rem;
+    width: 10rem;
+    margin-right: 1rem; 
+    opacity: 1;
+  }
+  .badge a{
+    text-decoration: none;
+    color: white;
+  }
+  .badge .btn-1{
+    background-color: brown;
+  }
+.badge .btn-1:hover{
+    opacity: 0.9;
+}
+.badge .btn-2:hover{
+    opacity: 0.9;
+}
+.right-part{
+    width: 50%;
+}
+.profile-image{
+    position: absolute;
+    z-index: 2; /* Ensure the image is above the big circle */
+    border-radius: 50%; /* Optional: Make the image circular */
+    width: 400px; /* Set the width of the image */
+    height: 400px; /* Set the height of the image */
+    background-size: cover; /* Make sure the entire image fits within the circular frame */
+    background-position: center; /* Center the background image */
+    top: 55%; /* Position the image in the vertical center of the big circle */
+    left: 70%; /* Position the image in the horizontal center of the big circle */
+    transform: translate(-50%, -50%);
+}
+.big-circle{
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    border-radius: 50%;
+    margin-top: 7rem;
+    margin-left: 15rem;
+    z-index: -1;
+}
+.about-me{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 500px;
+    background-color: brown;
+}
+.about-me .about{
+    height: 400px;
+    background-color: black;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1000px; /* Limit the maximum width */
+    padding: 2rem; /* Add padding for better readability */
+    color: white;
+    border-radius: 20px;
+
+}
+/* .about-me .about:hover{
+    transform: scale(1.1);
+} */
+.about-me .about h3{
+    color: white;
+}
+.about i{
+    padding: 0 1rem 0 1rem;
+}
+.my-skill{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 500px;
+    background-color: #D3D3D3;
+}
+.my-skill .skill{
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1000px; /* Limit the maximum width */
+    padding: 2rem; /* Add padding for better readability */
+    color: white;
+    border-radius: 20px;
+
+}
+.skill i{
+    padding: 0 1rem 0 1rem;
+}
+.qualities{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.skill-quality{
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    /* background-color: blueviolet; */
+    border-right: 1px solid white;
+}
+.skill-quality i{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.skill-quality i,p{
+    opacity: 0.7;
+}
+.skill-quality i:hover{
+    opacity: 1;
+    transform: scale(1.5);
+}
+.skill-quality p:hover{
+    opacity: 1;
+    transform: scale(1.5);
+}
+.skill-quality p{
+    font-size: 0.85rem;
+}
+.my-info{
+	padding: 0;
+	margin: 0;
+	margin-left: 15%;
+	transform: translateX(-200%);
+	opacity: 0;
+	animation: slide-in-anim 1.5s ease-out forwards infinite;
+}
+
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+.my-education{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 500px;
+    background-color: maroon;
+}
+.my-education .education{
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1000px; /* Limit the maximum width */
+    padding: 2rem; /* Add padding for better readability */
+    color: white;
+    border-radius: 20px;
+
+}
+.education i{
+    padding: 0 1rem 0 1rem;
+}
+
+.my-contact{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 500px;
+    background-color: #D3D3D3;
+}
+.my-contact .contact{
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1000px; /* Limit the maximum width */
+    padding: 2rem; /* Add padding for better readability */
+    color: white;
+    border-radius: 20px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+    padding: 0 2rem 0 2rem;
+}
+.form input{
+    border: 2px solid black;
+}
+.form textarea{
+    border: 2px solid black;
+}
+.form button{   
+    background-color: black;
+    color: white;
+    border: none;
+    height: 2rem;
+
+}
+.copyright{
+    height: 3rem;
+    background-color: black;
+    color: white;
+    padding-top: 0.75rem;
+    opacity: 0.7;
+}
+.copyright h6{
+    text-align: center;
+}
+.contact i{
+    padding: 0 1rem 0 1rem;
+}
